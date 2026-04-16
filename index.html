@@ -11,18 +11,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="authoring-tool" content="Adobe_Animate_CC">
-<title>Yoga-Gen-11-Mini-i-GDN-300x600</title>
+<title>Yoga-Gen-11-Mini-i-GDN-300x250</title>
 <!-- write your code here -->
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<script src="Yoga-Gen-11-Mini-i-GDN-300x600.js"></script>
+<script src="Yoga-Gen-11-Mini-i-GDN-300x250.js"></script>
 <script>
-var clickTag = "https://www.lenovo.com/legion";
+var clickTag = "https://www.lenovo.com/yoga";
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
 	canvas = document.getElementById("canvas");
 	anim_container = document.getElementById("animation_container");
 	dom_overlay_container = document.getElementById("dom_overlay_container");
-	var comp=AdobeAn.getComposition("41FAE8623EE03347999970983E15442A");
+	var comp=AdobeAn.getComposition("7495505DF97AA1479D64FD35736D3833");
 	var lib=comp.getLibrary();
 	var loader = new createjs.LoadQueue(false);
 	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
@@ -47,7 +47,7 @@ function handleComplete(evt,comp) {
 	for(i=0; i<ssMetadata.length; i++) {
 		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
 	}
-	exportRoot = new lib.YogaGen11MiniiGDN300x600();
+	exportRoot = new lib.YogaGen11MiniiGDN300x250();
 	stage = new lib.Stage(canvas);
 	stage.enableMouseOver();	
 	//Registers the "tick" event listener.
@@ -65,11 +65,11 @@ function handleComplete(evt,comp) {
 <!-- write your code here -->
 </head>
 <body onload="init();" style="margin:0px;">
-	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:300px; height:600px">
+	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:300px; height:250px">
 	<a href="javascript:void(0)" onclick="openAds()">
-		<canvas id="canvas" width="300" height="600" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+		<canvas id="canvas" width="300" height="250" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
 		</a>
-		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:300px; height:600px; position: absolute; left: 0px; top: 0px; display: block;">
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:300px; height:250px; position: absolute; left: 0px; top: 0px; display: block;">
 		</div>
 	</div>
 </body>
